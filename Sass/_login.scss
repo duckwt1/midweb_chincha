@@ -1,0 +1,58 @@
+.hidden-login {
+  display: none;
+}
+
+.create-login-main {
+  padding-top: 20px;
+}
+
+.login-header {
+  margin-bottom: 10px;
+}
+
+.login-form {
+  @include flex(column, flex-start, center);
+  height: 450px;
+
+  .input-container {
+    @include flex(column, space-around, center);
+
+    @media (min-width: 600px) {
+      @include flex(row, space-around, center);
+      flex-wrap: wrap;
+    }
+
+    .input-wrapper {
+      @include flex(column, space-evenly, center);
+
+      @media (min-width: 600px) {
+        @include flex(column, flex-start, center);
+        margin: 0 5px 0 5px;
+      }
+
+      .create-form-styling {
+        margin: 5px 0 5px 0;
+      }
+
+      input {
+        border: 1px solid black;
+        border-radius: 3px;
+        padding: 2px;
+      }
+
+    }
+
+  }
+
+  .buyBtn.create-form-styling {
+    margin-top: 10px;
+  }
+
+  .link-button {
+    text-decoration: none;
+    color: $ice;
+    cursor: default;
+  }
+
+}
+

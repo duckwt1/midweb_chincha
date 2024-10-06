@@ -1,0 +1,75 @@
+{
+  "pageName": "Watches",
+  "products": [{
+    "name": "MÀN HÌNH MSI MPG 491CQP QD-OLED",
+    "price": 100000,
+    "image": "./images/products/Armbandsur1.png",
+    "description": "Nhìn thấu tương lai.",
+    "category": "armbandsur",
+    "id": 1
+  },
+  {
+    "name": "Màn hình LG BT OLED 45GS95QE-B",
+    "price": 100000,
+    "image": "./images/products/Armbandsur2.png",
+    "description": "Nhìn thấu tâm can.",
+    "category": "armbandsur",
+    "id": 2
+  },
+  {
+    "name": "Màn hình cong Samsung Odyssey G8",
+    "price": 100000,
+    "image": "./images/products/Armbandsur3.png",
+    "description": "Nhìn xuyên vũ trụ",
+    "category": "armbandsur",
+    "id": 3
+  },
+  {
+    "name": "Khỉ Đen 120FPS",
+    "price": 100000,
+    "image": "./images/products/Fickur1.png",
+    "description": "Gần như là end game.",
+    "category": "fickur",
+    "id": 4
+  },
+  {
+    "name": "Cấu Hình Khủng Long",
+    "price": 100000,
+    "image": "./images/products/Fickur2.png",
+    "description": "Chơi VSCode 1000fps.",
+    "category": "fickur",
+    "id": 5
+  },
+  {
+    "name": "Cấu Hình Xem Youtube",
+    "price": 100000,
+    "image": "./images/products/Fickur3.png",
+    "description": "Như tên sản phẩm.",
+    "category":"fickur",
+    "id": 6
+  },
+  {
+    "name": "Wooting 60HE",
+    "price": 100000,
+    "image": "./images/products/gokur5.png",
+    "description": "Vua Bàn Phím.",
+    "category": "gökur",
+    "id": 7
+  },
+  {
+    "name": "Hyper X Cloud II Core Wireless",
+    "price": 100000,
+    "image": "./images/products/gokur6.png",
+    "description": "Vua Tai Nghe.",
+    "category": "gökur",
+    "id": 8
+  },
+  {
+    "name": "Logitech G Pro Superlight",
+    "price": 100000,
+    "image": "./images/products/gokur7.png",
+    "description": "Vua Chuột.",
+    "category": "gökur",
+    "id": 9
+  }]
+}

@@ -1,0 +1,97 @@
+main{
+.main-wrapper {
+  width: 90%;
+  background: $green;
+  color: white;
+
+  @include flex(column, space-around, center);
+  margin: 10%;
+
+  .totalCartValue{
+    margin: 2%;
+  }
+  .order-button {
+    margin: 2%;
+    border: 1px solid black;
+    padding: 5px;
+    border-radius: 7px;
+    &:hover {
+      background: rgb(109, 109, 250);
+    }
+  }
+  .shoppingcart-wrapper {
+    
+    .card {
+      color: black;
+      width: 70vw;
+      margin: 3% 0;
+      padding: 1rem;
+      border: 1px solid black;
+      background: white;
+      img {
+        width: 20vw;
+      }
+      .productHeaderContainer{
+        @include flex(row,space-between,center);
+        .deleteBtn{
+          border: none;
+          background: none;
+          font-size: 20px;
+          margin-right: 5%;
+          cursor: pointer;
+        }
+      }
+      .bottom-line-wrapper{
+        margin-top: 5%;
+        @include flex(row, space-between,center);
+        width: 100%;
+        button{
+          padding: .5vh 1.5vw;
+          border: .5px solid black;
+          background: rgba($gold, 0.3);
+        }
+        .decreaseBtn{
+          border-radius: 5px 0 0 5px;
+        }
+        .increaseBtn{
+          border-radius: 0 5px 5px 0;
+        }
+      }
+    }
+  }
+ 
+}
+.orderCartBtn{
+  align-self: center !important;
+  margin-bottom: 20vh !important;
+}
+}
+
+
+@media only screen and (min-width: 600px) {
+  main{
+.main-wrapper {
+  .shoppingcart-wrapper {
+
+    .card {
+      @include flex(row,flex-start,center);
+      margin: 1% 0;
+      img{
+        width: 8vw;
+        margin-right: 5%;
+      }
+    
+      .productHeaderContainer{
+        margin: 0 0 5% 0;
+      }
+      .bottom-line-wrapper{
+        @include flex(row, space-between,center);
+        width: 40vw;
+        
+        
+      }
+    }
+  }
+}
+}
+}

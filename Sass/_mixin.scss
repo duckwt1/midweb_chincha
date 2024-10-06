@@ -1,0 +1,53 @@
+@mixin flex($direction,$justify,$align) {
+    display: flex;
+    justify-content:$justify ;
+    flex-direction: $direction;
+    align-items: $align;
+}
+//Knappar
+@mixin basbtn {
+    padding: .4rem 1rem;
+    border: 1px solid;
+    box-shadow: 0 1px 1px rgba(0,0,0,.1), inset 0 1px 1px rgba(0,0,0,.1);
+    font-weight: 700;
+    text-shadow: 0 1px 1px rgba(0,0,0,.1);
+    border-radius: 1.875rem;
+}
+@mixin backbtnStyle {
+
+    color:$green;
+    background-color: transparent;
+    border-color: $green;
+    box-sizing: border-box;
+    border-width: 1px;
+    cursor: pointer;
+    &:hover{
+        color: white;
+        background-color: $green;
+    }
+}
+
+@mixin buybtnStyle {
+
+    color: #fff;
+    background-color: $gold;
+    min-width: 5rem;
+    border: 2px solid white;
+    &:hover{
+        border: 2px solid $gold;
+        color: $gold;
+        background-color: white;
+    }
+}
+
+// text
+@mixin heading2 {
+    color: $black;
+    letter-spacing: 0.1rem;
+    margin: 10px 0px 0px;
+    font-weight: 700;
+    font-size: calc(0.6875rem + 0.3125 * ((100vw - 20rem) / 100));
+    line-height: 1.4;
+    // font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}

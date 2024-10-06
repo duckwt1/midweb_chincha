@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./Sass/style.css">
+  <title>Chìn Chá Shop | Vua PC</title>
+</head>
+
+<body>
+  <header class="header-img">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+          <img src="./logo/hourglass-logo-1.png" alt="Chìn Chá Shop Logo" height="30">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Danh mục sản phẩm
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="produktlista.html?category=armbandsur">Màn Hình</a></li>
+                <li><a class="dropdown-item" href="produktlista.html?category=fickur">PC Gaming - Máy tính chơi game</a>
+                </li>
+                <li><a class="dropdown-item" href="produktlista.html?category=gökur">Gaming Gear</a></li>
+              </ul>
+            </li>
+          </ul>
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/nhanlotayy26">Facebook</a></li>
+            <li class="nav-item"><a class="nav-link" href="https://shopee.vn/tructiepgame_official_store?entryPoint=ShopBySearch&searchKeyword=ttgshop">Mua hàng tại Shopee</a></li>
+            <li class="nav-item" id="loginMenuLink"><a class="nav-link" href="./login.html">Đăng Nhập</a></li>
+          </ul>
+        </div>
+        <div class="cart ms-3">
+          <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+          <span id="quantity" class="badge bg-secondary">0</span>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Banner/Slider section -->
+    <div class="container-fluid mt-3">
+      <div class="row">
+        <!-- Main banner -->
+        <div class="col-md-9 mb-3">
+          <div class="banner-main position-relative">
+            <img src="https://theme.hstatic.net/1000288298/1001020793/14/slide_1_img.jpg?v=505" class="img-fluid w-100"
+              alt="PC Giá Shock">
+            <div class="banner-text position-absolute top-0 start-0 p-4 text-white">
+
+            </div>
+          </div>
+        </div>
+
+        <!-- Secondary banners -->
+        <div class="col-md-3">
+          <div class="d-flex flex-column gap-3">
+            <div class="banner-secondary position-relative">
+              <img src="https://theme.hstatic.net/1000288298/1001020793/14/banner_top_1_img_large.jpg?v=505"
+                class="img-fluid w-100" alt="PC Gaming Hiệu Suất Cao">
+              <div class="banner-text position-absolute top-0 start-0 p-2 text-white">
+
+
+              </div>
+            </div>
+            <div class="banner-secondary position-relative">
+              <img src="https://theme.hstatic.net/1000288298/1001020793/14/banner_top_2_img_large.jpg?v=505"
+                class="img-fluid w-100" alt="PC AMD Gaming">
+              <div class="banner-text position-absolute top-0 start-0 p-2 text-white">
+
+              </div>
+            </div>
+            <div class="banner-secondary position-relative">
+              <img src="https://theme.hstatic.net/1000288298/1001020793/14/banner_top_3_img_large.jpg?v=505"
+                class="img-fluid w-100" alt="PC Workstation 3D Render">
+              <div class="banner-text position-absolute top-0 start-0 p-2 text-white">
+
+              </div>
+            </div>
+            <div class="banner-secondary position-relative">
+              <img src="https://theme.hstatic.net/1000288298/1001020793/14/categorybanner_1_img.jpg?v=505"
+                class="img-fluid w-100" alt="PC Workstation 3D Render">
+              <div class="banner-text position-absolute top-0 start-0 p-2 text-white">
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <h2 class="text-center mb-4">Sản Phẩm</h2>
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="./images/products/Armbandsur1.png" class="card-img-top" alt="Màn Hình">
+            <div class="card-body">
+              <h5 class="card-title">Màn Hình</h5>
+              <p class="card-text">Mua màn bự bự về làm web cho dễ.</p>
+              <a href="produktlista.html?category=armbandsur" class="btn btn-primary">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="./images/products/Fickur1.png" class="card-img-top" alt="PC-Gaming">
+            <div class="card-body">
+              <h5 class="card-title">PC-Gaming</h5>
+              <p class="card-text">Mua màn về làm web nhưng lại chọn cấu hình Gaming. Có thật là làm web không?</p>
+              <a href="produktlista.html?category=Fickur" class="btn btn-primary">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="card">
+            <img src="./images/products/gokur5.png" class="card-img-top" alt="Gaming Gear">
+            <div class="card-body">
+              <h5 class="card-title">Gaming Gear</h5>
+              <p class="card-text">Có thể bạn chưa biết: Lí do các tuyển thủ chuyên nghiệp chơi tệ 99% là vì GearDiff.
+              </p>
+              <a href="produktlista.html?category=Gökur" class="btn btn-primary">Xem thêm</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>Chìn Chá</h5>
+          <p>Sự hài lòng của bạn là vinh dự của chung tui!!</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Liên hệ</h5>
+          <p>Hotline: 0968 239 497 - 097 221 6881</p>
+          <p>Email: nhanlotayy26@gmail.com</p>
+          <p>Tư vấn build PC: 0379291578</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Địa chỉ</h5>
+          <p>CS1: 56 Huỳnh Văn Nghệ</p>
+          <p>CS2: 470 Trần Đại Nghĩa</p>
+          <p>CS3: 193 Nguyễn Lương Bằng, Quận Liên Chiểu, Thành phố Đà Nẵng</p>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col text-center">
+          <i class="fa fa-facebook mx-2"></i>
+          <i class="fa fa-instagram mx-2"></i>
+          <i class="fa fa-twitter mx-2"></i>
+        </div>
+      </div>
+      <div class="row mt-3">
+        <div class="col text-center">
+          <p>&copy; 2024 Chìn Chá Shop. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS and Popper.js -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>

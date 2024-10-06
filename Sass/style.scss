@@ -1,0 +1,251 @@
+@import "./variables";
+@import "./mixin";
+@import "./varukorg";
+@import "./produktsida";
+@import "./produktlista";
+@import "./index";
+@import "./skapalogin";
+@import "./login";
+@import "./order";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap&subset=vietnamese');
+
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lato", sans-serif;
+  &::-webkit-scrollbar {
+    display: none;
+}
+}
+body {
+  overflow-x: hidden;
+}
+
+.header {
+  width: 100vw;
+  height: 10vh;
+  background: $ice;
+  .logo {
+    margin-left: 4%;
+    .hourglass-logo {
+      height: 55px;
+      width: 180px;
+    }
+  }
+  @include flex(row, space-between, center);
+
+  .nav {
+    @include flex(column, center, center);
+    position: fixed;
+    background-color: rgba($gold, 0.747);
+    backdrop-filter: (blur(4px));
+    height: 100vh;
+    inset: 0 0 0 40%;
+    transform: translateX(100%);
+    z-index: 999;
+    transition: all 0.3s ease;
+    ul {
+      height: 80%;
+      width: 50%;
+      @include flex(column, space-around, center);
+      li {
+        list-style: none;
+        font-size: 1.2rem;
+        a {
+          color: $ice;
+          text-decoration: none;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+    &.active {
+      transform: translateX(0%);
+    }
+  }
+  .hamburger-container {
+    position: fixed;
+    right: 0;
+    @include flex(column, center, center);
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+    z-index: 9999;
+
+    .hamburger-line {
+      width: 100%;
+      height: 3px;
+      background: rgb(0, 0, 0);
+      transition: all 0.5s ease;
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 3px;
+        background: black;
+        transition: all 0.5s ease;
+      }
+      &::before {
+        top: 15%;
+      }
+      &::after {
+        bottom: 15%;
+      }
+    }
+    &.activeBtn {
+      z-index: 9999;
+
+      .hamburger-line {
+        background: transparent;
+        &::before {
+          transform: translateY(12.5px) rotate(45deg);
+        }
+
+        &::after {
+          transform: translateY(-12.5px) rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  .cart {
+    position: relative;
+    right: 20%;
+    padding: 2.5px 5px;
+    cursor: pointer;
+    &:hover {
+      background-color: ($green);
+      color: white;
+      border-radius: 4px;
+    }
+  }
+}
+.footer {
+  margin-top: 10%;
+  background-color: $green;
+  color: $ice;
+  text-align: center;
+  padding: 5%;
+  .footerTitle {
+    padding: 5%;
+    li {
+      list-style: none;
+      font-size: 3.5vh;
+      a {
+        color: $ice;
+        text-decoration: none;
+        &:hover {
+          color: rgba($gold, 0.747);
+        }
+      }
+    }
+  }
+
+  .social {
+    font-size: 4vh;
+    padding: 5%;
+  }
+}
+
+//Knappar
+#shoppingcart-main {
+  @include flex(column, space-around, center);
+  // width: 100vw;
+  height: 100%;
+  .back-btn {
+    align-self: flex-start;
+    margin: 2% 0 0 2%;
+    @include backbtnStyle;
+    @include basbtn;
+  }
+}
+
+.buyBtn {
+  @include buybtnStyle;
+  @include basbtn;
+}
+.basbtnStyle {
+  @include basbtn;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    overflow-x: hidden;
+  }
+  .header {
+    .hamburger-container {
+      display: none;
+    }
+
+    .hamburger-container {
+      display: none;
+    }
+    .logo {
+      z-index: 1;
+    }
+    .nav {
+      transform: translateX(0);
+      inset: 0 0 0 0;
+      height: 10%;
+      backdrop-filter: blur(0);
+      position: absolute;
+      width: 100%;
+      z-index: 0;
+
+      ul {
+        @include flex(row, space-between, center);
+        margin-left: 10%;
+        width: 50%;
+        li {
+          a {
+            color: black;
+          }
+        }
+      }
+    }
+
+    .cart {
+      right: 5%;
+      z-index: 1;
+    }
+  }
+
+  .footer {
+    background-color: $green;
+    color: $ice;
+    text-align: center;
+    padding: 2%;
+
+    .footerTitle {
+      padding: 1%;
+      font-size: 3vh;
+      font-weight: bold;
+    }
+
+    .footerText {
+      padding: 1%;
+      margin: 0% 20% 0% 20%;
+    }
+
+    .social {
+      padding: 1%;
+      font-size: 4vh;
+
+      i {
+        padding: 1%;
+      }
+    }
+
+    .copyright {
+      padding: 1%;
+    }
+  }
+}
+
+.basbtnStyle {
+  @include basbtn;
+}

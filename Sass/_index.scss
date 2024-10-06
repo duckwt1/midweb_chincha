@@ -1,0 +1,120 @@
+.header-img {
+  .imgDiv {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    @include flex(row, center, center);
+    .headerIMG {
+      height: 100%;
+    }
+  }
+
+  @include flex(column, flex-start, center);
+  height: 100vh;
+
+  .startheading {
+    position: absolute;
+    top: 35%;
+    font-size: 20vw;
+    color: $ice;
+    user-select: none;
+  }
+}
+
+
+.startmain {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px;
+
+  .categoryTitel {
+    text-transform: uppercase;
+    margin-bottom: 7%;
+    &:hover {
+      color: $gold;
+    }
+  }
+  .categorycontainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .category {
+      margin: 20px 30px;
+      a {
+        text-decoration: none;
+        display: flex;
+        flex-direction: column;
+
+        @include heading2;
+        img {
+          max-width: 70%;
+          height: auto;
+          align-self: center;
+          transition: all 0.3s ease;
+          &:hover {
+            transform: scale(103%);
+          }
+          margin-bottom: 6%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .header {
+    .hamburger-container {
+      display: none;
+    }
+    .nav {
+      transform: translateX(0);
+      inset: 0 0 0 0;
+      height: 10%;
+      background: none;
+      
+      ul {
+        @include flex(row, space-around, center);
+        li {
+          @include flex(row, space-around, center);
+          a {
+            font-size: 20px;
+            color: black;
+          }
+        }
+      }
+    }
+  }
+
+  .header-img {
+    width:100vw;
+    .imgDiv {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+      z-index: -1;
+      .headerIMG {
+        background-repeat: no-repeat;
+        position: absolute;
+        background-size: 50%;
+        // height: 100vh;
+        height: 100vh;
+        margin: 5px;
+      }
+    }
+    .startheading {
+      font-size: 10vw;
+      left: 10%;
+      top: 50%;
+      color: $ice;
+    }
+  }
+
+  .startmain {
+    .categorycontainer {
+      @include flex(row, center, center);
+    }
+  }
+}

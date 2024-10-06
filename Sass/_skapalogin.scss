@@ -1,0 +1,61 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.create-login-main {
+  @include flex(column, space-around, center);
+
+  .login-heading {
+    margin: 20px 0 20px 0;
+  }
+
+  .create-login-form {
+    @include flex(column, flex-start, center);
+
+    @media (min-width: 600px) {
+      width: 320px;
+      @include flex(row, center, flex-start);
+      flex-wrap: wrap;
+    }
+
+    .input-container {
+      @include flex(column, space-around, center);
+
+      @media (min-width: 600px) {
+        @include flex(row, space-around, center);
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+      }
+
+      .input-wrapper {
+        @include flex(column, space-evenly, center);
+        height: 228px;
+
+        input {
+          border: 1px solid black;
+          border-radius: 3px;
+          padding: 2px;
+        }
+
+        @media (min-width: 600px) {
+          @include flex(column, flex-start, center);
+          margin: 0 5px 0 5px;
+        }
+  
+        .create-form-styling {
+          margin: 5px 0 5px 0;
+        }
+  
+      }
+
+    }
+
+    .buyBtn.create-form-styling {
+      margin: 10px 0 20px 0;
+
+    }
+
+  }
+
+
+}
