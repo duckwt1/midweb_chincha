@@ -12,23 +12,38 @@
     <title>Chìn Chá Shop | Vua PC</title>
   </head>
   <body>
-    <header class="header">
+    <header class="header-img">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html">
-            <img src="./logo/hourglass-logo-1.png" alt="Chìn Chá Shop Logo" height="30" class="hourglass-logo">
+            <img src="./logo/hourglass-logo-1.png" alt="Chìn Chá Shop Logo" height="30">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/">Facebook</a></li>
-              <li class="nav-item"><a class="nav-link" href="https://shopee.vn/">Mua hàng tại Shopee</a></li>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Danh mục sản phẩm
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="produktlista.html?category=armbandsur">Màn Hình</a></li>
+                  <li><a class="dropdown-item" href="produktlista.html?category=fickur">PC Gaming - Máy tính chơi game</a>
+                  </li>
+                  <li><a class="dropdown-item" href="produktlista.html?category=gökur">Gaming Gear</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/nhanlotayy26">Facebook</a></li>
+              <li class="nav-item"><a class="nav-link" href="https://shopee.vn/tructiepgame_official_store?entryPoint=ShopBySearch&searchKeyword=ttgshop">Mua hàng tại Shopee</a></li>
               <li class="nav-item" id="loginMenuLink"><a class="nav-link" href="./login.html">Đăng Nhập</a></li>
             </ul>
           </div>
-          <div class="cart">
+          <div class="cart ms-3">
             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             <span id="quantity" class="badge bg-secondary">0</span>
           </div>
